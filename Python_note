@@ -1,0 +1,33 @@
+List:
+	list_var = [1, 2, 3]: a list named list_var
+	list_var.append(data): add data to list
+	list_var.pop(): pop the last data
+		.pop(1): pop the first data
+		.sort(key,reverse): 1,2,3
+	len(list_var): show how many data in the list
+	new_list = sorted(list_var, key, reverse)
+	sum(new_list): sum of the list
+
+Dictionary:
+	{"key":"value"}
+
+Tuple:
+	tup = ((1,2),(3,4))
+	The value of tup[0][0] is 1
+	tup += (5,6) ==> ((1,2),(3,4),5,6)
+
+For loop:
+	for item in list:
+
+While loop:
+	while range:
+
+	isinstance(cmp1,cmp2) ==> true or false
+
+
+
+
+
+
+
+
