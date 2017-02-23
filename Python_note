@@ -24,7 +24,15 @@ While loop:
 
 	isinstance(cmp1,cmp2) ==> true or false
 
-
+String substitution:
+	"My name is {var}".format(var = "Lawrence")
+	==> My name is Lawrence
+	"%s" %("string"): show string
+	"%.2f" %(2.1130): show 2.11
+Date
+	import datetime
+	datetime.date.today(): show date
+	datetime.datetime.now(): show accuracy to millisecond
 
 
 
