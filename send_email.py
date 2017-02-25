@@ -1,4 +1,5 @@
 from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
 import smtplib
 
 host = "smtp.gmail.com" # Set SMTP server.
@@ -22,10 +23,16 @@ to_email = input("Enter the email that you want to send to.\n")
 subject = input("Enter the subject of this mail.\n")
 contents = input("contents:\n")
 # Set the construction of this mail.
-msg = MIMEText(contents, 'plain')
+msg = MIMEMultipart("alternative")
 msg['From'] = from_email
 msg['To'] = to_email
 msg['Subject'] = subject
+msg.attach(MIMEText(contents, 'plain')) # Mail contents.
+# Attachment file.
+att = MIMEText(open('class_practice.py','r').read(), 'base64', 'utf-8') # The file should in the same folder.
+att["Content-Type"] = 'application/octet-stream' # Can download.
+att["Content-Disposition"] = 'attachment; filename = "class_practice.py"'
+msg.attach(att)
 
 try:
 	email_conn.sendmail(from_email, to_email, msg.as_string()) #Send a email.
