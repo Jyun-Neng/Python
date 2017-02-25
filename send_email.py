@@ -11,7 +11,7 @@ email_conn.starttls() # SMTP commands will be Encrypted.
 user_name = input("Enter your account: ")
 password = input("Enter your password: ")
 try:
-	email_conn.login(user_name, password) # Log in SMTP server.
+	email_conn.login(user_name, password) # Log in email on an SMTP server.
 	print("Log in!")
 except smtplib.SMTPAuthenticationError:
 	print("Incorrect password or account.")
