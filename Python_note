@@ -41,6 +41,17 @@ Import:
 	
 	from folder_name.file_name import class_name, def_name
 
+smtplib:
+	A method that can send a email by our local computer.
+	impor smtplib
+	obj = SMTP(host, port): connect to smtp server
+	obj.ehlo(): Identification
+	obj.starttls(): Encrypt all the SMTP commands
+	obj.login(username, password): Log in on an SMTP server	
+	obj.sendmail(from_addr, to_addr, msg): send a message
+	obj.quit(): Close the connection
+	
+
 
 
 
