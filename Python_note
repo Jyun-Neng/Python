@@ -43,7 +43,7 @@ Import:
 
 smtplib:
 	A method that can send a email by our local computer.
-	impor smtplib
+	import smtplib
 	obj = SMTP(host, port): connect to smtp server
 	obj.ehlo(): Identification
 	obj.starttls(): Encrypt all the SMTP commands
@@ -51,10 +51,21 @@ smtplib:
 	obj.sendmail(from_addr, to_addr, msg): send a message
 	obj.quit(): Close the connection
 	
-
-
-
-
+email:
+	Response to construct the contents of the mail.
+	form email.mime.text import MIMEText
+	from email.mime.mltipart import MIMEMultipart
+	msg = MIMEMultipart("alternative")
+	msg['From'] = from_addr
+	msg['To'] = to_addr
+	msg['Subject'] = "subject": make a mail title
+	.attach(): add to the mail construction
+	msg.attach(MIMEText("contents", 'format', 'encode')): mail contents
+	
+	msg.att = MIMEText(open('filename','r').read(), 'base64', 'utf-8')
+	att["Content-Type"] = 'application/octet-stream'
+	att["Content-Disposition"] = 'attachment; filename="filename"'
+	msg.attach(att): add file to the mail
 
 
 
