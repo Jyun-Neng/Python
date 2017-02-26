@@ -1,0 +1,8 @@
+Hi {name},
+It looks like you've tried to create an Atlassian account for {email}
+However, an account for that email address already exists.
+You can reset your password if you've forgotten it.
+If you didn't try to create an account for {email}, don't worry - we haven't done anything, and you can safely ignore this message.
+Feel free to contact us if you've got any questions.
+Cheers,
+The Atlassians

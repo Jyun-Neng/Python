@@ -1,0 +1,3 @@
+Hi {visitor}!
+Welcome to visit our website.
+You have visited our website {times} times.
