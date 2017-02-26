@@ -67,5 +67,32 @@ email:
 	att["Content-Disposition"] = 'attachment; filename="filename"'
 	msg.attach(att): add file to the mail
 
+os:
+	import os
+	os.path.join(path): join the path
+	os.getcwd(): show the current working direction
+	os.path.isfile(path): if the path is valid retrun True
+csv:
+	import csv
+	with open("data.csv", "w+") as csvfile: let csvfile substitute the (open .csv file)
+	writer = csv.writer(csvfile)
+		    .DictWriter(csvfile,fieldname): write dictionary. Fieldname = ["key1", "key2"]
+		    .weiterheader(): write fieldname on the top
+	writer.writerow(["1","2"]): write data into data.csv 
+	open("file_name","mode"):
+		mode: "r"--read only, 
+		      "rb"--read in binary format 
+		      "r+"--read and write
+		      "w"--write only
+		      "w+"--read and write
+		      Overwrite exisiting file or create a new file.
+		      "a"--append to exisiting file or create a new one
+	reader = csv.reader(csvfile)
+		    .DictReader()
+
+
+
+
+
 
 
