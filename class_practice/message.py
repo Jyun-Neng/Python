@@ -1,3 +1,4 @@
+from use_template import Use_template
 class User_record():
 	user_detail = []
 	def add_user(self, name):
@@ -33,8 +34,8 @@ class User_record():
 	def get_user_details(self): # Show all the user.
 		return self.user_detail
 	def make_message(self, name, time): 
-		unf_message = """Hi {visitor}!
-Welcome to visit our website.
-You have visited our website {times} times."""
+		template = Use_template()
+		file_ = 'template/welcome_message.txt'
+		unf_message = template.get_template(file_)
 		new_message = unf_message.format(visitor = name, times = time)
 		return new_message
