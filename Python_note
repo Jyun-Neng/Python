@@ -90,6 +90,15 @@ csv:
 	reader = csv.reader(csvfile)
 		    .DictReader()
 
+web scraping:
+	import requests
+	from bs4 import BeautifulSoup
+	requests.get('url'): get the source code
+	.status_code: show the status of the page
+	.text: show the page context
+	.content: storage in byte
+	BeautifulSoup(.text, 'html.parser'): show in html format
+	findAll(): find the context we want
 
 
 
