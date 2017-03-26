@@ -100,6 +100,47 @@ web scraping:
 	BeautifulSoup(.text, 'html.parser'): show in html format
 	findAll(): find the context we want
 
+numpy:
+	import numpy as np
+	np.array([1,2,3]): array
+	
+	Array isn't like list. 
+	List can append new element, but array cannot. 
+	Array can directly do element arithmetic but list cannot.
+
+	np.inner(a,b): inner product
+	np.outer(a,b): outer product
+	np.trace(a): the trace of a
+	np.cov(): covariance
+	np.arccos(a): get arccosine a
+	np.matrix([[1,2],[3,4]]): we also can use 
+				  np.array([[1,2],[3,4]])
+	np.random.random((10,10)): make a 10x10 matrix and each value 				 	  of elements is 0~1
+	np.random.randn(10,10): make a 10x10 matrix and each value of
+				elements is -1~1
+	np.diag(): diagonal element
+	np.linalg.norm(a): get norm a
+	np.linalg.inv(a): get inverse matrix of a
+	np.linalg.det(a): get determinant of a
+	np.linalg.eig(): the eigenvalue
+	np.linalg.eigh(): the eigenvalue of symmetric or Hermitian
+			  matrix
+	np.linalg.solve(A,b): solve Ax=b
+
+	A.T: transpose of matrix A.
+	.shape: mxn matrix
+	a.sum(): summation of all the element in a
+	a.dot(b): vecter a dot b or matrix multiplication
+	.mean(): get average
+	.var(): get variance
+	
+
+
+
+
+
+
+
 
 
 
