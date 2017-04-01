@@ -117,8 +117,9 @@ numpy:
 				  np.array([[1,2],[3,4]])
 	np.random.random((10,10)): make a 10x10 matrix and each value 				 	  of elements is 0~1
 	np.random.randn(10,10): make a 10x10 matrix and each value of
-				elements is -1~1
+				elements is -1~1 (Gaussian)
 	np.diag(): diagonal element
+	np.linspace(starting point,ending point,how many points)
 	np.linalg.norm(a): get norm a
 	np.linalg.inv(a): get inverse matrix of a
 	np.linalg.det(a): get determinant of a
@@ -133,6 +134,19 @@ numpy:
 	a.dot(b): vecter a dot b or matrix multiplication
 	.mean(): get average
 	.var(): get variance
+
+map function:
+	map(data_type, var): change the data type of var
+
+matplotlib:
+	import matplotlib.pypplot as plt
+	plt.plot(x,y): plot x-axis and y-axis
+	plt.xlabel("x"): the name of x-axis
+	plt.ylabel("y"): the name of y-axis
+	plt.title("chart"): the name of the chart
+	plt.hist(x,bins=10): plot the x histogram & x-axis has 10 pts 
+	plt.imshow(im,cmap='gray'):plot img just in black&white	
+	plt.show(): show the plot
 	
 
 
